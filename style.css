@@ -1,0 +1,118 @@
+img {
+    width:100%;
+    border-radius: 50%;
+    border: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Utility class to hide an element */
+
+
+
+.hidden {
+    display: none !important;
+}
+
+/* Navbar Brand animation for cat-icon */
+.navbar-brand {
+    padding: 0 1.7rem;
+    position: relative;
+    z-index: 1;
+}
+
+.navbar-brand > i {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+    z-index: -1;
+}
+
+/* Adding animate class to start @keyframe cat1 animation */
+.navbar-brand.animate > i {
+    animation: cat1;
+    animation-duration: 2s;
+}
+
+/* Fontawesom chevron icons animation */
+/* Adding a transition for rotating icons */
+.chevron {
+    transition: transform 0.3s ease;
+}
+
+.rotated {
+    transform: rotate(90deg);
+}
+
+/* Search buttun icon anumation */
+
+#searchUserBtn > i {
+    transition: transform 0.5s ease;
+}
+
+#searchUserBtn:hover > i {
+    transform: rotate(90deg);
+}
+
+
+
+.searchContainer {
+    position: relative;
+    z-index: 1;
+
+}
+
+#alert {
+    position: relative;
+    z-index: 1;
+
+}
+
+@keyframes cat1 {
+
+    20% {
+        /* top: 150%; */
+        top: 150%;
+        left: 0%;
+        transform: translateX(0);
+    }
+    30% {
+        top: 150%;
+        left: 100%;
+        transform: translateX(-100%);
+    }
+    70% {
+        top: -150%;
+        left: 100%;
+        transform: translateX(-100%);
+    }
+    80% {
+        top: -150%;
+        left: 0%;
+        transform: translateX(0%);
+    }
+}
+
+/* @media (max-width:992px) {
+    .following {
+        display: none !important;
+    }
+
+}
+
+@media (max-width:768px) {
+    .followers {
+        display: none !important;
+    }
+}
+
+@media (max-width:500px) {
+    .since{
+        display: none !important;
+    }
+} */
+
